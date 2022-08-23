@@ -1,3 +1,5 @@
+ines (26 sloc)  722 Bytes
+
 name: Sync GitHub to S3
 
 on:
@@ -23,7 +25,7 @@ jobs:
 
     - name: Deploy objects to S3 bucket
       run: |
-        aws s3 sync ./ s3://felipe93629 \
+        aws s3 sync ./ s3:/felipe93629 \
         --exclude '.git/*' \
         --exclude '.github/*' \
         --exclude 'README.md' \
